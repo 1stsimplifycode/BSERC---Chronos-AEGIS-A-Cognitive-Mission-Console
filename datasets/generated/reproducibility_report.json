@@ -1,0 +1,29 @@
+{
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "scenario_count": 18,
+  "deterministic_content_hash": "b031c30c3c96c5b2005ff0e7b8aec3985a57947f742707f61a69045649124071",
+  "hash_covers": [
+    "benchmark_report.json",
+    "ablation_report.json"
+  ],
+  "hash_excludes_fields": [
+    "execution_time_seconds",
+    "peak_memory_bytes"
+  ],
+  "optional_dependencies": {
+    "scipy": false,
+    "matplotlib": false
+  },
+  "note": "Re-run this script with the same seeds and compare deterministic_content_hash: it must match exactly regardless of hardware or timing. execution_time_seconds/peak_memory_bytes are expected to differ between runs and are excluded from the hash."
+}

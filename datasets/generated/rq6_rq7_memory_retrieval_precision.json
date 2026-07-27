@@ -1,0 +1,22 @@
+{
+  "n_episodes": 180,
+  "outcome_distribution": {
+    "success": 30,
+    "delay": 90,
+    "cyber_incident": 50,
+    "failure": 10
+  },
+  "majority_class_baseline": 0.5,
+  "before": {
+    "description": "categorical fields only (pre-Phase-8 extract_feature_vector)",
+    "evaluated": 180,
+    "correct": 100,
+    "precision_at_1": 0.5555555555555556
+  },
+  "after": {
+    "description": "+ incoming-edge confidence (Phase 8 fix)",
+    "evaluated": 180,
+    "correct": 140,
+    "precision_at_1": 0.7777777777777778
+  }
+}

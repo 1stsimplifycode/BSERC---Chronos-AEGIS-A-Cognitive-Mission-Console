@@ -1,0 +1,1771 @@
+{
+  "scenario_summaries": [
+    {
+      "scenario_name": "adverse_weather",
+      "n_runs": 10,
+      "execution_time_seconds": {
+        "n": 10,
+        "mean": 0.0032658800017088653,
+        "stdev": 9.089729116925003e-05,
+        "ci_low": 0.0032095423121922227,
+        "ci_high": 0.003322217691225508,
+        "confidence": 0.95
+      },
+      "peak_memory_bytes": {
+        "n": 10,
+        "mean": 11150.0,
+        "stdev": 0.0,
+        "ci_low": 11150.0,
+        "ci_high": 11150.0,
+        "confidence": 0.95
+      },
+      "final_metric_stats": {
+        "trust_mean": {
+          "n": 10,
+          "mean": 0.5139239122942552,
+          "stdev": 0.1255246872987316,
+          "ci_low": 0.43612433467491785,
+          "ci_high": 0.5917234899135925,
+          "confidence": 0.95
+        },
+        "p_success": {
+          "n": 10,
+          "mean": 0.49931648816440444,
+          "stdev": 0.13646940176338654,
+          "ci_low": 0.4147334308898821,
+          "ci_high": 0.5838995454389267,
+          "confidence": 0.95
+        },
+        "expected_delay": {
+          "n": 10,
+          "mean": 1.0852501567729558,
+          "stdev": 0.6112568453050485,
+          "ci_low": 0.7063962005907289,
+          "ci_high": 1.4641041129551826,
+          "confidence": 0.95
+        },
+        "cyber_impact": {
+          "n": 10,
+          "mean": 0.5129050579880978,
+          "stdev": 0.17335979975722407,
+          "ci_low": 0.4054575152972568,
+          "ci_high": 0.6203526006789388,
+          "confidence": 0.95
+        },
+        "comm_reliability": {
+          "n": 10,
+          "mean": 0.41321004827076413,
+          "stdev": 0.14063010805213666,
+          "ci_low": 0.32604820590759614,
+          "ci_high": 0.5003718906339322,
+          "confidence": 0.95
+        },
+        "operational_confidence": {
+          "n": 10,
+          "mean": 0.46295208737510646,
+          "stdev": 0.19060955994702253,
+          "ci_low": 0.3448132290101834,
+          "ci_high": 0.5810909457400295,
+          "confidence": 0.95
+        },
+        "mdri_value": {
+          "n": 10,
+          "mean": 0.0,
+          "stdev": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "confidence": 0.95
+        },
+        "mdri_dependency_node_count": {
+          "n": 10,
+          "mean": 0.0,
+          "stdev": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "confidence": 0.95
+        }
+      },
+      "scheduler_action_counts": {},
+      "warning_free_run_count": 0
+    },
+    {
+      "scenario_name": "communication_loss",
+      "n_runs": 10,
+      "execution_time_seconds": {
+        "n": 10,
+        "mean": 0.0029631499986862765,
+        "stdev": 6.343625670985413e-05,
+        "ci_low": 0.002923832521909512,
+        "ci_high": 0.003002467475463041,
+        "confidence": 0.95
+      },
+      "peak_memory_bytes": {
+        "n": 10,
+        "mean": 10911.0,
+        "stdev": 0.0,
+        "ci_low": 10911.0,
+        "ci_high": 10911.0,
+        "confidence": 0.95
+      },
+      "final_metric_stats": {
+        "trust_mean": {
+          "n": 10,
+          "mean": 0.4843765271199105,
+          "stdev": 0.13291412658646223,
+          "ci_low": 0.4019970117385216,
+          "ci_high": 0.5667560425012994,
+          "confidence": 0.95
+        },
+        "p_success": {
+          "n": 10,
+          "mean": 0.4672884769641853,
+          "stdev": 0.16144234167643903,
+          "ci_low": 0.3672273155895127,
+          "ci_high": 0.5673496383388579,
+          "confidence": 0.95
+        },
+        "expected_delay": {
+          "n": 10,
+          "mean": 0.9044719406619809,
+          "stdev": 0.5849547252371421,
+          "ci_low": 0.5419199078369206,
+          "ci_high": 1.2670239734870412,
+          "confidence": 0.95
+        },
+        "cyber_impact": {
+          "n": 10,
+          "mean": 0.49052316905722987,
+          "stdev": 0.1878826405788049,
+          "ci_low": 0.3740744417702232,
+          "ci_high": 0.6069718963442365,
+          "confidence": 0.95
+        },
+        "comm_reliability": {
+          "n": 10,
+          "mean": 0.459530028991398,
+          "stdev": 0.11148488444329907,
+          "ci_low": 0.39043225143639315,
+          "ci_high": 0.5286278065464028,
+          "confidence": 0.95
+        },
+        "operational_confidence": {
+          "n": 10,
+          "mean": 0.4857014161234344,
+          "stdev": 0.17184626842493653,
+          "ci_low": 0.3791919526335826,
+          "ci_high": 0.5922108796132863,
+          "confidence": 0.95
+        },
+        "mdri_value": {
+          "n": 10,
+          "mean": 0.0,
+          "stdev": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "confidence": 0.95
+        },
+        "mdri_dependency_node_count": {
+          "n": 10,
+          "mean": 0.0,
+          "stdev": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "confidence": 0.95
+        }
+      },
+      "scheduler_action_counts": {},
+      "warning_free_run_count": 0
+    },
+    {
+      "scenario_name": "compromised_firmware_deployment",
+      "n_runs": 10,
+      "execution_time_seconds": {
+        "n": 10,
+        "mean": 0.004110939998645336,
+        "stdev": 0.00043890954338184237,
+        "ci_low": 0.0038389060440262067,
+        "ci_high": 0.004382973953264465,
+        "confidence": 0.95
+      },
+      "peak_memory_bytes": {
+        "n": 10,
+        "mean": 14636.0,
+        "stdev": 0.0,
+        "ci_low": 14636.0,
+        "ci_high": 14636.0,
+        "confidence": 0.95
+      },
+      "final_metric_stats": {
+        "trust_mean": {
+          "n": 10,
+          "mean": 0.4843015090856125,
+          "stdev": 0.09239235202014033,
+          "ci_low": 0.4270371882805952,
+          "ci_high": 0.5415658298906297,
+          "confidence": 0.95
+        },
+        "p_success": {
+          "n": 10,
+          "mean": 0.5202499860604679,
+          "stdev": 0.10116326170059126,
+          "ci_low": 0.45754949900671515,
+          "ci_high": 0.5829504731142207,
+          "confidence": 0.95
+        },
+        "expected_delay": {
+          "n": 10,
+          "mean": 0.7547389098450994,
+          "stdev": 0.2952806645351793,
+          "ci_low": 0.5717254208306055,
+          "ci_high": 0.9377523988595933,
+          "confidence": 0.95
+        },
+        "cyber_impact": {
+          "n": 10,
+          "mean": 0.46702216419094017,
+          "stdev": 0.13009015688273437,
+          "ci_low": 0.38639293120330037,
+          "ci_high": 0.5476513971785799,
+          "confidence": 0.95
+        },
+        "comm_reliability": {
+          "n": 10,
+          "mean": 0.5316718893333606,
+          "stdev": 0.11660893950282848,
+          "ci_low": 0.4593982479072044,
+          "ci_high": 0.6039455307595168,
+          "confidence": 0.95
+        },
+        "operational_confidence": {
+          "n": 10,
+          "mean": 0.5370474677931721,
+          "stdev": 0.13952779009139546,
+          "ci_low": 0.4505688366260916,
+          "ci_high": 0.6235260989602527,
+          "confidence": 0.95
+        },
+        "mdri_value": {
+          "n": 10,
+          "mean": 0.0,
+          "stdev": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "confidence": 0.95
+        },
+        "mdri_dependency_node_count": {
+          "n": 10,
+          "mean": 1.0,
+          "stdev": 0.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0,
+          "confidence": 0.95
+        }
+      },
+      "scheduler_action_counts": {},
+      "warning_free_run_count": 0
+    },
+    {
+      "scenario_name": "delayed_firmware_rollout",
+      "n_runs": 10,
+      "execution_time_seconds": {
+        "n": 10,
+        "mean": 0.004360610000730958,
+        "stdev": 0.0002950527943839814,
+        "ci_low": 0.0041777377445041865,
+        "ci_high": 0.004543482256957729,
+        "confidence": 0.95
+      },
+      "peak_memory_bytes": {
+        "n": 10,
+        "mean": 14535.0,
+        "stdev": 0.0,
+        "ci_low": 14535.0,
+        "ci_high": 14535.0,
+        "confidence": 0.95
+      },
+      "final_metric_stats": {
+        "trust_mean": {
+          "n": 10,
+          "mean": 0.5018096295446386,
+          "stdev": 0.09177266297044887,
+          "ci_low": 0.4449293889341936,
+          "ci_high": 0.5586898701550835,
+          "confidence": 0.95
+        },
+        "p_success": {
+          "n": 10,
+          "mean": 0.44954451063031364,
+          "stdev": 0.11344392624398447,
+          "ci_low": 0.379232528699167,
+          "ci_high": 0.5198564925614603,
+          "confidence": 0.95
+        },
+        "expected_delay": {
+          "n": 10,
+          "mean": 0.8759147813393107,
+          "stdev": 0.5335094246533008,
+          "ci_low": 0.5452482902515301,
+          "ci_high": 1.2065812724270912,
+          "confidence": 0.95
+        },
+        "cyber_impact": {
+          "n": 10,
+          "mean": 0.48119450268081365,
+          "stdev": 0.16470200119567274,
+          "ci_low": 0.3791130205291158,
+          "ci_high": 0.5832759848325115,
+          "confidence": 0.95
+        },
+        "comm_reliability": {
+          "n": 10,
+          "mean": 0.46437920750816064,
+          "stdev": 0.12330757083603894,
+          "ci_low": 0.3879537876584409,
+          "ci_high": 0.5408046273578804,
+          "confidence": 0.95
+        },
+        "operational_confidence": {
+          "n": 10,
+          "mean": 0.5062249264617615,
+          "stdev": 0.12628079008678894,
+          "ci_low": 0.42795672009047464,
+          "ci_high": 0.5844931328330485,
+          "confidence": 0.95
+        },
+        "mdri_value": {
+          "n": 10,
+          "mean": 0.0,
+          "stdev": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "confidence": 0.95
+        },
+        "mdri_dependency_node_count": {
+          "n": 10,
+          "mean": 1.0,
+          "stdev": 0.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0,
+          "confidence": 0.95
+        }
+      },
+      "scheduler_action_counts": {},
+      "warning_free_run_count": 0
+    },
+    {
+      "scenario_name": "firmware_update_in_flight",
+      "n_runs": 10,
+      "execution_time_seconds": {
+        "n": 10,
+        "mean": 0.004260560001421254,
+        "stdev": 0.00035524163385462304,
+        "ci_low": 0.004040383001490402,
+        "ci_high": 0.004480737001352105,
+        "confidence": 0.95
+      },
+      "peak_memory_bytes": {
+        "n": 10,
+        "mean": 14053.6,
+        "stdev": 7.58946638440411,
+        "ci_low": 14048.896086437104,
+        "ci_high": 14058.303913562897,
+        "confidence": 0.95
+      },
+      "final_metric_stats": {
+        "trust_mean": {
+          "n": 10,
+          "mean": 0.4645901614466522,
+          "stdev": 0.11477415674495323,
+          "ci_low": 0.39345370925918516,
+          "ci_high": 0.5357266136341193,
+          "confidence": 0.95
+        },
+        "p_success": {
+          "n": 10,
+          "mean": 0.4942364612500512,
+          "stdev": 0.11374173918311165,
+          "ci_low": 0.42373989633867754,
+          "ci_high": 0.5647330261614248,
+          "confidence": 0.95
+        },
+        "expected_delay": {
+          "n": 10,
+          "mean": 0.7980217481357679,
+          "stdev": 0.3261455526049222,
+          "ci_low": 0.5958783548230111,
+          "ci_high": 1.0001651414485246,
+          "confidence": 0.95
+        },
+        "cyber_impact": {
+          "n": 10,
+          "mean": 0.49438073069189664,
+          "stdev": 0.17693549633101488,
+          "ci_low": 0.38471698902759166,
+          "ci_high": 0.6040444723562016,
+          "confidence": 0.95
+        },
+        "comm_reliability": {
+          "n": 10,
+          "mean": 0.43972899369992036,
+          "stdev": 0.1971332231928587,
+          "ci_low": 0.3175468012628002,
+          "ci_high": 0.5619111861370405,
+          "confidence": 0.95
+        },
+        "operational_confidence": {
+          "n": 10,
+          "mean": 0.46842358619778235,
+          "stdev": 0.17380593208936435,
+          "ci_low": 0.36069953290373036,
+          "ci_high": 0.5761476394918343,
+          "confidence": 0.95
+        },
+        "mdri_value": {
+          "n": 10,
+          "mean": 0.0,
+          "stdev": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "confidence": 0.95
+        },
+        "mdri_dependency_node_count": {
+          "n": 10,
+          "mean": 1.0,
+          "stdev": 0.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0,
+          "confidence": 0.95
+        }
+      },
+      "scheduler_action_counts": {},
+      "warning_free_run_count": 0
+    },
+    {
+      "scenario_name": "fuel_shortage",
+      "n_runs": 10,
+      "execution_time_seconds": {
+        "n": 10,
+        "mean": 0.002946760001941584,
+        "stdev": 5.066910491202194e-05,
+        "ci_low": 0.0029153555424257945,
+        "ci_high": 0.0029781644614573738,
+        "confidence": 0.95
+      },
+      "peak_memory_bytes": {
+        "n": 10,
+        "mean": 11836.4,
+        "stdev": 121.43146215046576,
+        "ci_low": 11761.137382993662,
+        "ci_high": 11911.662617006337,
+        "confidence": 0.95
+      },
+      "final_metric_stats": {
+        "trust_mean": {
+          "n": 10,
+          "mean": 0.4814834572634437,
+          "stdev": 0.13373066224679997,
+          "ci_low": 0.3985978571360779,
+          "ci_high": 0.5643690573908094,
+          "confidence": 0.95
+        },
+        "p_success": {
+          "n": 10,
+          "mean": 0.47385729189835957,
+          "stdev": 0.18193884406797264,
+          "ci_low": 0.3610925001617959,
+          "ci_high": 0.5866220836349232,
+          "confidence": 0.95
+        },
+        "expected_delay": {
+          "n": 10,
+          "mean": 1.0356706632929304,
+          "stdev": 0.7186579393630905,
+          "ci_low": 0.5902500425494543,
+          "ci_high": 1.4810912840364066,
+          "confidence": 0.95
+        },
+        "cyber_impact": {
+          "n": 10,
+          "mean": 0.4700422073941842,
+          "stdev": 0.24397793218656819,
+          "ci_low": 0.31882589703301006,
+          "ci_high": 0.6212585177553582,
+          "confidence": 0.95
+        },
+        "comm_reliability": {
+          "n": 10,
+          "mean": 0.42444086833261785,
+          "stdev": 0.19358891577300436,
+          "ci_low": 0.3044554200272836,
+          "ci_high": 0.5444263166379522,
+          "confidence": 0.95
+        },
+        "operational_confidence": {
+          "n": 10,
+          "mean": 0.46539797708647407,
+          "stdev": 0.22272121035036765,
+          "ci_low": 0.32735647732245693,
+          "ci_high": 0.6034394768504912,
+          "confidence": 0.95
+        },
+        "mdri_value": {
+          "n": 10,
+          "mean": 0.0,
+          "stdev": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "confidence": 0.95
+        },
+        "mdri_dependency_node_count": {
+          "n": 10,
+          "mean": 0.0,
+          "stdev": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "confidence": 0.95
+        }
+      },
+      "scheduler_action_counts": {},
+      "warning_free_run_count": 0
+    },
+    {
+      "scenario_name": "gps_degradation",
+      "n_runs": 10,
+      "execution_time_seconds": {
+        "n": 10,
+        "mean": 0.0032511500001419337,
+        "stdev": 2.819457387626259e-05,
+        "ci_low": 0.0032336751433154824,
+        "ci_high": 0.003268624856968385,
+        "confidence": 0.95
+      },
+      "peak_memory_bytes": {
+        "n": 10,
+        "mean": 11109.2,
+        "stdev": 129.02092853486988,
+        "ci_low": 11029.233469430766,
+        "ci_high": 11189.166530569235,
+        "confidence": 0.95
+      },
+      "final_metric_stats": {
+        "trust_mean": {
+          "n": 10,
+          "mean": 0.4646404639804517,
+          "stdev": 0.12792789757687908,
+          "ci_low": 0.3853513885691353,
+          "ci_high": 0.5439295393917681,
+          "confidence": 0.95
+        },
+        "p_success": {
+          "n": 10,
+          "mean": 0.4651128912938292,
+          "stdev": 0.10878685457323693,
+          "ci_low": 0.3976873392492982,
+          "ci_high": 0.5325384433383602,
+          "confidence": 0.95
+        },
+        "expected_delay": {
+          "n": 10,
+          "mean": 1.0625000768544666,
+          "stdev": 0.6139925675450583,
+          "ci_low": 0.6819505336181166,
+          "ci_high": 1.4430496200908165,
+          "confidence": 0.95
+        },
+        "cyber_impact": {
+          "n": 10,
+          "mean": 0.4894577977061044,
+          "stdev": 0.22035028115963304,
+          "ci_low": 0.35288578807645044,
+          "ci_high": 0.6260298073357584,
+          "confidence": 0.95
+        },
+        "comm_reliability": {
+          "n": 10,
+          "mean": 0.5177989148301358,
+          "stdev": 0.09127997728501487,
+          "ci_low": 0.4612240383600104,
+          "ci_high": 0.5743737913002612,
+          "confidence": 0.95
+        },
+        "operational_confidence": {
+          "n": 10,
+          "mean": 0.541288159627506,
+          "stdev": 0.144738791099071,
+          "ci_low": 0.4515797759225341,
+          "ci_high": 0.6309965433324779,
+          "confidence": 0.95
+        },
+        "mdri_value": {
+          "n": 10,
+          "mean": 0.0,
+          "stdev": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "confidence": 0.95
+        },
+        "mdri_dependency_node_count": {
+          "n": 10,
+          "mean": 0.0,
+          "stdev": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "confidence": 0.95
+        }
+      },
+      "scheduler_action_counts": {},
+      "warning_free_run_count": 0
+    },
+    {
+      "scenario_name": "maintenance_delay",
+      "n_runs": 10,
+      "execution_time_seconds": {
+        "n": 10,
+        "mean": 0.003077820000180509,
+        "stdev": 8.369289811855707e-05,
+        "ci_low": 0.0030259475576874554,
+        "ci_high": 0.0031296924426735626,
+        "confidence": 0.95
+      },
+      "peak_memory_bytes": {
+        "n": 10,
+        "mean": 11945.4,
+        "stdev": 121.43146215046576,
+        "ci_low": 11870.137382993662,
+        "ci_high": 12020.662617006337,
+        "confidence": 0.95
+      },
+      "final_metric_stats": {
+        "trust_mean": {
+          "n": 10,
+          "mean": 0.4814834572634437,
+          "stdev": 0.13373066224679997,
+          "ci_low": 0.3985978571360779,
+          "ci_high": 0.5643690573908094,
+          "confidence": 0.95
+        },
+        "p_success": {
+          "n": 10,
+          "mean": 0.47385729189835957,
+          "stdev": 0.18193884406797264,
+          "ci_low": 0.3610925001617959,
+          "ci_high": 0.5866220836349232,
+          "confidence": 0.95
+        },
+        "expected_delay": {
+          "n": 10,
+          "mean": 1.0356706632929304,
+          "stdev": 0.7186579393630905,
+          "ci_low": 0.5902500425494543,
+          "ci_high": 1.4810912840364066,
+          "confidence": 0.95
+        },
+        "cyber_impact": {
+          "n": 10,
+          "mean": 0.4700422073941842,
+          "stdev": 0.24397793218656819,
+          "ci_low": 0.31882589703301006,
+          "ci_high": 0.6212585177553582,
+          "confidence": 0.95
+        },
+        "comm_reliability": {
+          "n": 10,
+          "mean": 0.42444086833261785,
+          "stdev": 0.19358891577300436,
+          "ci_low": 0.3044554200272836,
+          "ci_high": 0.5444263166379522,
+          "confidence": 0.95
+        },
+        "operational_confidence": {
+          "n": 10,
+          "mean": 0.46539797708647407,
+          "stdev": 0.22272121035036765,
+          "ci_low": 0.32735647732245693,
+          "ci_high": 0.6034394768504912,
+          "confidence": 0.95
+        },
+        "mdri_value": {
+          "n": 10,
+          "mean": 0.0,
+          "stdev": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "confidence": 0.95
+        },
+        "mdri_dependency_node_count": {
+          "n": 10,
+          "mean": 0.0,
+          "stdev": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "confidence": 0.95
+        }
+      },
+      "scheduler_action_counts": {},
+      "warning_free_run_count": 0
+    },
+    {
+      "scenario_name": "mixed_cyber_operational",
+      "n_runs": 10,
+      "execution_time_seconds": {
+        "n": 10,
+        "mean": 0.004546760000812356,
+        "stdev": 0.00014370496172600938,
+        "ci_low": 0.004457692379417058,
+        "ci_high": 0.004635827622207654,
+        "confidence": 0.95
+      },
+      "peak_memory_bytes": {
+        "n": 10,
+        "mean": 14918.0,
+        "stdev": 0.0,
+        "ci_low": 14918.0,
+        "ci_high": 14918.0,
+        "confidence": 0.95
+      },
+      "final_metric_stats": {
+        "trust_mean": {
+          "n": 10,
+          "mean": 0.4739622545506451,
+          "stdev": 0.08227055661707727,
+          "ci_low": 0.4229713722544495,
+          "ci_high": 0.5249531368468408,
+          "confidence": 0.95
+        },
+        "p_success": {
+          "n": 10,
+          "mean": 0.4708520852205146,
+          "stdev": 0.14233736148010967,
+          "ci_low": 0.38263209566380396,
+          "ci_high": 0.5590720747772252,
+          "confidence": 0.95
+        },
+        "expected_delay": {
+          "n": 10,
+          "mean": 0.8903798617107249,
+          "stdev": 0.5181271137698249,
+          "ci_low": 0.5692472504938872,
+          "ci_high": 1.2115124729275626,
+          "confidence": 0.95
+        },
+        "cyber_impact": {
+          "n": 10,
+          "mean": 0.4782777041062107,
+          "stdev": 0.15541223150038283,
+          "ci_low": 0.38195397506290696,
+          "ci_high": 0.5746014331495144,
+          "confidence": 0.95
+        },
+        "comm_reliability": {
+          "n": 10,
+          "mean": 0.465160315757806,
+          "stdev": 0.13296879138826137,
+          "ci_low": 0.38274691940382005,
+          "ci_high": 0.547573712111792,
+          "confidence": 0.95
+        },
+        "operational_confidence": {
+          "n": 10,
+          "mean": 0.5131341552662539,
+          "stdev": 0.1720058061261438,
+          "ci_low": 0.40652581110172853,
+          "ci_high": 0.6197424994307794,
+          "confidence": 0.95
+        },
+        "mdri_value": {
+          "n": 10,
+          "mean": 0.0,
+          "stdev": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "confidence": 0.95
+        },
+        "mdri_dependency_node_count": {
+          "n": 10,
+          "mean": 0.0,
+          "stdev": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "confidence": 0.95
+        }
+      },
+      "scheduler_action_counts": {},
+      "warning_free_run_count": 0
+    },
+    {
+      "scenario_name": "mixed_firmware_and_communication_degradation",
+      "n_runs": 10,
+      "execution_time_seconds": {
+        "n": 10,
+        "mean": 0.0040397599994321355,
+        "stdev": 0.0007155255485354069,
+        "ci_low": 0.003596280818962894,
+        "ci_high": 0.004483239179901377,
+        "confidence": 0.95
+      },
+      "peak_memory_bytes": {
+        "n": 10,
+        "mean": 15219.6,
+        "stdev": 121.43146215046576,
+        "ci_low": 15144.337382993663,
+        "ci_high": 15294.862617006338,
+        "confidence": 0.95
+      },
+      "final_metric_stats": {
+        "trust_mean": {
+          "n": 10,
+          "mean": 0.48193884217933414,
+          "stdev": 0.09275861597535519,
+          "ci_low": 0.42444751279436244,
+          "ci_high": 0.5394301715643058,
+          "confidence": 0.95
+        },
+        "p_success": {
+          "n": 10,
+          "mean": 0.4958302512489454,
+          "stdev": 0.09687953177905045,
+          "ci_low": 0.43578479872029807,
+          "ci_high": 0.5558757037775928,
+          "confidence": 0.95
+        },
+        "expected_delay": {
+          "n": 10,
+          "mean": 0.7941934038087135,
+          "stdev": 0.30838730478455245,
+          "ci_low": 0.6030564842774552,
+          "ci_high": 0.9853303233399718,
+          "confidence": 0.95
+        },
+        "cyber_impact": {
+          "n": 10,
+          "mean": 0.4743348505432161,
+          "stdev": 0.1347479540549033,
+          "ci_low": 0.3908187380067838,
+          "ci_high": 0.5578509630796484,
+          "confidence": 0.95
+        },
+        "comm_reliability": {
+          "n": 10,
+          "mean": 0.49891430565196504,
+          "stdev": 0.10351184849921202,
+          "ci_low": 0.4347581761674911,
+          "ci_high": 0.5630704351364391,
+          "confidence": 0.95
+        },
+        "operational_confidence": {
+          "n": 10,
+          "mean": 0.5153865612319818,
+          "stdev": 0.12410868872721333,
+          "ci_low": 0.4384646124930218,
+          "ci_high": 0.5923085099709418,
+          "confidence": 0.95
+        },
+        "mdri_value": {
+          "n": 10,
+          "mean": 0.0,
+          "stdev": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "confidence": 0.95
+        },
+        "mdri_dependency_node_count": {
+          "n": 10,
+          "mean": 1.0,
+          "stdev": 0.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0,
+          "confidence": 0.95
+        }
+      },
+      "scheduler_action_counts": {},
+      "warning_free_run_count": 0
+    },
+    {
+      "scenario_name": "multiple_simultaneous_failures",
+      "n_runs": 10,
+      "execution_time_seconds": {
+        "n": 10,
+        "mean": 0.0045379600021988155,
+        "stdev": 9.399444689337622e-05,
+        "ci_low": 0.004479702710950086,
+        "ci_high": 0.0045962172934475454,
+        "confidence": 0.95
+      },
+      "peak_memory_bytes": {
+        "n": 10,
+        "mean": 14624.8,
+        "stdev": 15.17893276880822,
+        "ci_low": 14615.392172874206,
+        "ci_high": 14634.207827125792,
+        "confidence": 0.95
+      },
+      "final_metric_stats": {
+        "trust_mean": {
+          "n": 10,
+          "mean": 0.49207872842831357,
+          "stdev": 0.10008531038881256,
+          "ci_low": 0.43004635024266746,
+          "ci_high": 0.5541111066139597,
+          "confidence": 0.95
+        },
+        "p_success": {
+          "n": 10,
+          "mean": 0.48339432384954434,
+          "stdev": 0.07385912032824686,
+          "ci_low": 0.4376168079797121,
+          "ci_high": 0.5291718397193765,
+          "confidence": 0.95
+        },
+        "expected_delay": {
+          "n": 10,
+          "mean": 1.0591882924583136,
+          "stdev": 0.5078217399483655,
+          "ci_low": 0.7444429007420578,
+          "ci_high": 1.3739336841745695,
+          "confidence": 0.95
+        },
+        "cyber_impact": {
+          "n": 10,
+          "mean": 0.4985799484224612,
+          "stdev": 0.17613290298410653,
+          "ci_low": 0.38941365012753076,
+          "ci_high": 0.6077462467173917,
+          "confidence": 0.95
+        },
+        "comm_reliability": {
+          "n": 10,
+          "mean": 0.45936353427262483,
+          "stdev": 0.10682586515446493,
+          "ci_low": 0.39315339372825053,
+          "ci_high": 0.5255736748169991,
+          "confidence": 0.95
+        },
+        "operational_confidence": {
+          "n": 10,
+          "mean": 0.5018985663953421,
+          "stdev": 0.15219411667102656,
+          "ci_low": 0.40756940893665905,
+          "ci_high": 0.5962277238540252,
+          "confidence": 0.95
+        },
+        "mdri_value": {
+          "n": 10,
+          "mean": 0.0,
+          "stdev": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "confidence": 0.95
+        },
+        "mdri_dependency_node_count": {
+          "n": 10,
+          "mean": 0.0,
+          "stdev": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "confidence": 0.95
+        }
+      },
+      "scheduler_action_counts": {},
+      "warning_free_run_count": 0
+    },
+    {
+      "scenario_name": "normal_mission",
+      "n_runs": 10,
+      "execution_time_seconds": {
+        "n": 10,
+        "mean": 0.002865709998877719,
+        "stdev": 0.0011844520740918372,
+        "ci_low": 0.002131592487352764,
+        "ci_high": 0.003599827510402674,
+        "confidence": 0.95
+      },
+      "peak_memory_bytes": {
+        "n": 10,
+        "mean": 9145.8,
+        "stdev": 199.85594812264156,
+        "ci_low": 9021.930276177069,
+        "ci_high": 9269.66972382293,
+        "confidence": 0.95
+      },
+      "final_metric_stats": {
+        "trust_mean": {
+          "n": 10,
+          "mean": 0.4814834572634437,
+          "stdev": 0.13373066224679997,
+          "ci_low": 0.3985978571360779,
+          "ci_high": 0.5643690573908094,
+          "confidence": 0.95
+        },
+        "p_success": {
+          "n": 10,
+          "mean": 0.47385729189835957,
+          "stdev": 0.18193884406797264,
+          "ci_low": 0.3610925001617959,
+          "ci_high": 0.5866220836349232,
+          "confidence": 0.95
+        },
+        "expected_delay": {
+          "n": 10,
+          "mean": 1.0356706632929304,
+          "stdev": 0.7186579393630905,
+          "ci_low": 0.5902500425494543,
+          "ci_high": 1.4810912840364066,
+          "confidence": 0.95
+        },
+        "cyber_impact": {
+          "n": 10,
+          "mean": 0.4700422073941842,
+          "stdev": 0.24397793218656819,
+          "ci_low": 0.31882589703301006,
+          "ci_high": 0.6212585177553582,
+          "confidence": 0.95
+        },
+        "comm_reliability": {
+          "n": 10,
+          "mean": 0.42444086833261785,
+          "stdev": 0.19358891577300436,
+          "ci_low": 0.3044554200272836,
+          "ci_high": 0.5444263166379522,
+          "confidence": 0.95
+        },
+        "operational_confidence": {
+          "n": 10,
+          "mean": 0.46539797708647407,
+          "stdev": 0.22272121035036765,
+          "ci_low": 0.32735647732245693,
+          "ci_high": 0.6034394768504912,
+          "confidence": 0.95
+        },
+        "mdri_value": {
+          "n": 10,
+          "mean": 0.0,
+          "stdev": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "confidence": 0.95
+        },
+        "mdri_dependency_node_count": {
+          "n": 10,
+          "mean": 0.0,
+          "stdev": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "confidence": 0.95
+        }
+      },
+      "scheduler_action_counts": {},
+      "warning_free_run_count": 0
+    },
+    {
+      "scenario_name": "runway_closure",
+      "n_runs": 10,
+      "execution_time_seconds": {
+        "n": 10,
+        "mean": 0.0030331600020872427,
+        "stdev": 4.44791415706534e-05,
+        "ci_low": 0.0030055920511005804,
+        "ci_high": 0.003060727953073905,
+        "confidence": 0.95
+      },
+      "peak_memory_bytes": {
+        "n": 10,
+        "mean": 11902.0,
+        "stdev": 0.0,
+        "ci_low": 11902.0,
+        "ci_high": 11902.0,
+        "confidence": 0.95
+      },
+      "final_metric_stats": {
+        "trust_mean": {
+          "n": 10,
+          "mean": 0.4814834572634437,
+          "stdev": 0.13373066224679997,
+          "ci_low": 0.3985978571360779,
+          "ci_high": 0.5643690573908094,
+          "confidence": 0.95
+        },
+        "p_success": {
+          "n": 10,
+          "mean": 0.47385729189835957,
+          "stdev": 0.18193884406797264,
+          "ci_low": 0.3610925001617959,
+          "ci_high": 0.5866220836349232,
+          "confidence": 0.95
+        },
+        "expected_delay": {
+          "n": 10,
+          "mean": 1.0356706632929304,
+          "stdev": 0.7186579393630905,
+          "ci_low": 0.5902500425494543,
+          "ci_high": 1.4810912840364066,
+          "confidence": 0.95
+        },
+        "cyber_impact": {
+          "n": 10,
+          "mean": 0.4700422073941842,
+          "stdev": 0.24397793218656819,
+          "ci_low": 0.31882589703301006,
+          "ci_high": 0.6212585177553582,
+          "confidence": 0.95
+        },
+        "comm_reliability": {
+          "n": 10,
+          "mean": 0.42444086833261785,
+          "stdev": 0.19358891577300436,
+          "ci_low": 0.3044554200272836,
+          "ci_high": 0.5444263166379522,
+          "confidence": 0.95
+        },
+        "operational_confidence": {
+          "n": 10,
+          "mean": 0.46539797708647407,
+          "stdev": 0.22272121035036765,
+          "ci_low": 0.32735647732245693,
+          "ci_high": 0.6034394768504912,
+          "confidence": 0.95
+        },
+        "mdri_value": {
+          "n": 10,
+          "mean": 0.0,
+          "stdev": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "confidence": 0.95
+        },
+        "mdri_dependency_node_count": {
+          "n": 10,
+          "mean": 0.0,
+          "stdev": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "confidence": 0.95
+        }
+      },
+      "scheduler_action_counts": {},
+      "warning_free_run_count": 0
+    },
+    {
+      "scenario_name": "satellite_blackout",
+      "n_runs": 10,
+      "execution_time_seconds": {
+        "n": 10,
+        "mean": 0.004367899999488145,
+        "stdev": 0.00025152844545835623,
+        "ci_low": 0.004212003918509767,
+        "ci_high": 0.004523796080466522,
+        "confidence": 0.95
+      },
+      "peak_memory_bytes": {
+        "n": 10,
+        "mean": 13043.2,
+        "stdev": 136.610394919274,
+        "ci_low": 12958.52955586787,
+        "ci_high": 13127.870444132132,
+        "confidence": 0.95
+      },
+      "final_metric_stats": {
+        "trust_mean": {
+          "n": 10,
+          "mean": 0.5379421023175702,
+          "stdev": 0.11944459129160818,
+          "ci_low": 0.46391093799938277,
+          "ci_high": 0.6119732666357577,
+          "confidence": 0.95
+        },
+        "p_success": {
+          "n": 10,
+          "mean": 0.41217193359670634,
+          "stdev": 0.12303109181460709,
+          "ci_low": 0.3359178740710065,
+          "ci_high": 0.4884259931224062,
+          "confidence": 0.95
+        },
+        "expected_delay": {
+          "n": 10,
+          "mean": 0.9400085461171107,
+          "stdev": 0.43101676982501896,
+          "ci_low": 0.6728664933396054,
+          "ci_high": 1.207150598894616,
+          "confidence": 0.95
+        },
+        "cyber_impact": {
+          "n": 10,
+          "mean": 0.5563362345475068,
+          "stdev": 0.155654731226366,
+          "ci_low": 0.4598622053787035,
+          "ci_high": 0.6528102637163101,
+          "confidence": 0.95
+        },
+        "comm_reliability": {
+          "n": 10,
+          "mean": 0.3675995090726071,
+          "stdev": 0.14681067126385428,
+          "ci_low": 0.2766069843339722,
+          "ci_high": 0.458592033811242,
+          "confidence": 0.95
+        },
+        "operational_confidence": {
+          "n": 10,
+          "mean": 0.43460078786465334,
+          "stdev": 0.153239774660862,
+          "ci_low": 0.33962353677838064,
+          "ci_high": 0.529578038950926,
+          "confidence": 0.95
+        },
+        "mdri_value": {
+          "n": 10,
+          "mean": 0.0,
+          "stdev": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "confidence": 0.95
+        },
+        "mdri_dependency_node_count": {
+          "n": 10,
+          "mean": 0.0,
+          "stdev": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "confidence": 0.95
+        }
+      },
+      "scheduler_action_counts": {},
+      "warning_free_run_count": 0
+    },
+    {
+      "scenario_name": "sensor_spoofing",
+      "n_runs": 10,
+      "execution_time_seconds": {
+        "n": 10,
+        "mean": 0.0029888400007621386,
+        "stdev": 6.726622642929383e-05,
+        "ci_low": 0.0029471487277793885,
+        "ci_high": 0.0030305312737448887,
+        "confidence": 0.95
+      },
+      "peak_memory_bytes": {
+        "n": 10,
+        "mean": 11403.0,
+        "stdev": 0.0,
+        "ci_low": 11403.0,
+        "ci_high": 11403.0,
+        "confidence": 0.95
+      },
+      "final_metric_stats": {
+        "trust_mean": {
+          "n": 10,
+          "mean": 0.49418836710099046,
+          "stdev": 0.1303224815687862,
+          "ci_low": 0.413415140427054,
+          "ci_high": 0.574961593774927,
+          "confidence": 0.95
+        },
+        "p_success": {
+          "n": 10,
+          "mean": 0.48443501217023066,
+          "stdev": 0.14001593810601187,
+          "ci_low": 0.39765382928866155,
+          "ci_high": 0.5712161950517998,
+          "confidence": 0.95
+        },
+        "expected_delay": {
+          "n": 10,
+          "mean": 0.7808243692976126,
+          "stdev": 0.3161883387121734,
+          "ci_low": 0.5848524076911754,
+          "ci_high": 0.9767963309040497,
+          "confidence": 0.95
+        },
+        "cyber_impact": {
+          "n": 10,
+          "mean": 0.5320933911628691,
+          "stdev": 0.1365337382817957,
+          "ci_low": 0.44747045843384103,
+          "ci_high": 0.6167163238918972,
+          "confidence": 0.95
+        },
+        "comm_reliability": {
+          "n": 10,
+          "mean": 0.4287664193707549,
+          "stdev": 0.11717304641189374,
+          "ci_low": 0.35614314728467134,
+          "ci_high": 0.5013896914568384,
+          "confidence": 0.95
+        },
+        "operational_confidence": {
+          "n": 10,
+          "mean": 0.41763338678053696,
+          "stdev": 0.20199944796529187,
+          "ci_low": 0.2924351324033853,
+          "ci_high": 0.5428316411576886,
+          "confidence": 0.95
+        },
+        "mdri_value": {
+          "n": 10,
+          "mean": 0.0,
+          "stdev": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "confidence": 0.95
+        },
+        "mdri_dependency_node_count": {
+          "n": 10,
+          "mean": 0.0,
+          "stdev": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "confidence": 0.95
+        }
+      },
+      "scheduler_action_counts": {},
+      "warning_free_run_count": 0
+    },
+    {
+      "scenario_name": "software_exploit_injection",
+      "n_runs": 10,
+      "execution_time_seconds": {
+        "n": 10,
+        "mean": 0.0030941200006054715,
+        "stdev": 3.724927425869664e-05,
+        "ci_low": 0.0030710330854629812,
+        "ci_high": 0.003117206915747962,
+        "confidence": 0.95
+      },
+      "peak_memory_bytes": {
+        "n": 10,
+        "mean": 11806.6,
+        "stdev": 121.43146215046576,
+        "ci_low": 11731.337382993663,
+        "ci_high": 11881.862617006338,
+        "confidence": 0.95
+      },
+      "final_metric_stats": {
+        "trust_mean": {
+          "n": 10,
+          "mean": 0.4695027262417867,
+          "stdev": 0.07795298378668655,
+          "ci_low": 0.42118785413748033,
+          "ci_high": 0.517817598346093,
+          "confidence": 0.95
+        },
+        "p_success": {
+          "n": 10,
+          "mean": 0.4737308130215775,
+          "stdev": 0.13911764968795598,
+          "ci_low": 0.38750638483909616,
+          "ci_high": 0.5599552412040588,
+          "confidence": 0.95
+        },
+        "expected_delay": {
+          "n": 10,
+          "mean": 0.8988203836371944,
+          "stdev": 0.4982850988228608,
+          "ci_low": 0.5899857547153978,
+          "ci_high": 1.207655012558991,
+          "confidence": 0.95
+        },
+        "cyber_impact": {
+          "n": 10,
+          "mean": 0.46989675524487556,
+          "stdev": 0.1360254445359545,
+          "ci_low": 0.3855888604544713,
+          "ci_high": 0.5542046500352799,
+          "confidence": 0.95
+        },
+        "comm_reliability": {
+          "n": 10,
+          "mean": 0.4707439362706009,
+          "stdev": 0.17363852823145784,
+          "ci_low": 0.36312363905606804,
+          "ci_high": 0.5783642334851338,
+          "confidence": 0.95
+        },
+        "operational_confidence": {
+          "n": 10,
+          "mean": 0.5388956813973824,
+          "stdev": 0.18926008006614972,
+          "ci_low": 0.42159322395881926,
+          "ci_high": 0.6561981388359456,
+          "confidence": 0.95
+        },
+        "mdri_value": {
+          "n": 10,
+          "mean": 0.0,
+          "stdev": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "confidence": 0.95
+        },
+        "mdri_dependency_node_count": {
+          "n": 10,
+          "mean": 0.0,
+          "stdev": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "confidence": 0.95
+        }
+      },
+      "scheduler_action_counts": {},
+      "warning_free_run_count": 0
+    },
+    {
+      "scenario_name": "staged_patch_rollout",
+      "n_runs": 10,
+      "execution_time_seconds": {
+        "n": 10,
+        "mean": 0.006055130003369413,
+        "stdev": 0.0005976261992119582,
+        "ci_low": 0.005684724253922785,
+        "ci_high": 0.006425535752816041,
+        "confidence": 0.95
+      },
+      "peak_memory_bytes": {
+        "n": 10,
+        "mean": 16517.8,
+        "stdev": 129.02092853486988,
+        "ci_low": 16437.833469430767,
+        "ci_high": 16597.76653056923,
+        "confidence": 0.95
+      },
+      "final_metric_stats": {
+        "trust_mean": {
+          "n": 10,
+          "mean": 0.5012164706889111,
+          "stdev": 0.14560174263050937,
+          "ci_low": 0.4109732339116341,
+          "ci_high": 0.591459707466188,
+          "confidence": 0.95
+        },
+        "p_success": {
+          "n": 10,
+          "mean": 0.4864723067757951,
+          "stdev": 0.160622236746326,
+          "ci_low": 0.3869194423627751,
+          "ci_high": 0.5860251711888151,
+          "confidence": 0.95
+        },
+        "expected_delay": {
+          "n": 10,
+          "mean": 0.8976116622568174,
+          "stdev": 0.5957654509103316,
+          "ci_low": 0.5283591953639069,
+          "ci_high": 1.266864129149728,
+          "confidence": 0.95
+        },
+        "cyber_impact": {
+          "n": 10,
+          "mean": 0.4849318332635664,
+          "stdev": 0.23070506609856822,
+          "ci_low": 0.3419419793681784,
+          "ci_high": 0.6279216871589545,
+          "confidence": 0.95
+        },
+        "comm_reliability": {
+          "n": 10,
+          "mean": 0.40204673830824433,
+          "stdev": 0.1509900153101424,
+          "ci_low": 0.3084638768914284,
+          "ci_high": 0.49562959972506027,
+          "confidence": 0.95
+        },
+        "operational_confidence": {
+          "n": 10,
+          "mean": 0.4640510484906752,
+          "stdev": 0.1723546859185162,
+          "ci_low": 0.35722647036396593,
+          "ci_high": 0.5708756266173844,
+          "confidence": 0.95
+        },
+        "mdri_value": {
+          "n": 10,
+          "mean": 0.0,
+          "stdev": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "confidence": 0.95
+        },
+        "mdri_dependency_node_count": {
+          "n": 10,
+          "mean": 1.0,
+          "stdev": 0.0,
+          "ci_low": 1.0,
+          "ci_high": 1.0,
+          "confidence": 0.95
+        }
+      },
+      "scheduler_action_counts": {},
+      "warning_free_run_count": 0
+    },
+    {
+      "scenario_name": "supply_chain_delay",
+      "n_runs": 10,
+      "execution_time_seconds": {
+        "n": 10,
+        "mean": 0.0029776900002616456,
+        "stdev": 0.0001853328509641832,
+        "ci_low": 0.0028628216199112033,
+        "ci_high": 0.003092558380612088,
+        "confidence": 0.95
+      },
+      "peak_memory_bytes": {
+        "n": 10,
+        "mean": 11919.6,
+        "stdev": 7.58946638440411,
+        "ci_low": 11914.896086437104,
+        "ci_high": 11924.303913562897,
+        "confidence": 0.95
+      },
+      "final_metric_stats": {
+        "trust_mean": {
+          "n": 10,
+          "mean": 0.4814834572634437,
+          "stdev": 0.13373066224679997,
+          "ci_low": 0.3985978571360779,
+          "ci_high": 0.5643690573908094,
+          "confidence": 0.95
+        },
+        "p_success": {
+          "n": 10,
+          "mean": 0.47385729189835957,
+          "stdev": 0.18193884406797264,
+          "ci_low": 0.3610925001617959,
+          "ci_high": 0.5866220836349232,
+          "confidence": 0.95
+        },
+        "expected_delay": {
+          "n": 10,
+          "mean": 1.0356706632929304,
+          "stdev": 0.7186579393630905,
+          "ci_low": 0.5902500425494543,
+          "ci_high": 1.4810912840364066,
+          "confidence": 0.95
+        },
+        "cyber_impact": {
+          "n": 10,
+          "mean": 0.4700422073941842,
+          "stdev": 0.24397793218656819,
+          "ci_low": 0.31882589703301006,
+          "ci_high": 0.6212585177553582,
+          "confidence": 0.95
+        },
+        "comm_reliability": {
+          "n": 10,
+          "mean": 0.42444086833261785,
+          "stdev": 0.19358891577300436,
+          "ci_low": 0.3044554200272836,
+          "ci_high": 0.5444263166379522,
+          "confidence": 0.95
+        },
+        "operational_confidence": {
+          "n": 10,
+          "mean": 0.46539797708647407,
+          "stdev": 0.22272121035036765,
+          "ci_low": 0.32735647732245693,
+          "ci_high": 0.6034394768504912,
+          "confidence": 0.95
+        },
+        "mdri_value": {
+          "n": 10,
+          "mean": 0.0,
+          "stdev": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "confidence": 0.95
+        },
+        "mdri_dependency_node_count": {
+          "n": 10,
+          "mean": 0.0,
+          "stdev": 0.0,
+          "ci_low": 0.0,
+          "ci_high": 0.0,
+          "confidence": 0.95
+        }
+      },
+      "scheduler_action_counts": {},
+      "warning_free_run_count": 0
+    }
+  ],
+  "k_hop_scalability": [
+    {
+      "parameter_name": "k_hop",
+      "parameter_value": 3,
+      "execution_time_seconds": 0.002092900002025999,
+      "peak_memory_bytes": 10185
+    },
+    {
+      "parameter_name": "k_hop",
+      "parameter_value": 6,
+      "execution_time_seconds": 0.0017910000024130568,
+      "peak_memory_bytes": 9441
+    }
+  ],
+  "memory_size_scalability": [
+    {
+      "parameter_name": "memory_size",
+      "parameter_value": 0,
+      "execution_time_seconds": 0.0018244000093545765,
+      "peak_memory_bytes": 9806
+    },
+    {
+      "parameter_name": "memory_size",
+      "parameter_value": 5,
+      "execution_time_seconds": 0.002430699998512864,
+      "peak_memory_bytes": 12669
+    },
+    {
+      "parameter_name": "memory_size",
+      "parameter_value": 20,
+      "execution_time_seconds": 0.0043178999912925065,
+      "peak_memory_bytes": 12605
+    }
+  ],
+  "convergence": [
+    {
+      "mission_index": 0,
+      "scenario_name": "normal_mission",
+      "task_loss": 0.8732890476983737,
+      "ewc_penalty": 0.0,
+      "replay_batch_size": 0
+    },
+    {
+      "mission_index": 1,
+      "scenario_name": "satellite_blackout",
+      "task_loss": 0.5327231824383979,
+      "ewc_penalty": 0.0,
+      "replay_batch_size": 1
+    },
+    {
+      "mission_index": 2,
+      "scenario_name": "gps_degradation",
+      "task_loss": 0.44039066104129393,
+      "ewc_penalty": 0.0,
+      "replay_batch_size": 2
+    },
+    {
+      "mission_index": 3,
+      "scenario_name": "adverse_weather",
+      "task_loss": 0.41354687604983187,
+      "ewc_penalty": 0.0,
+      "replay_batch_size": 3
+    },
+    {
+      "mission_index": 4,
+      "scenario_name": "maintenance_delay",
+      "task_loss": 0.36695212518066356,
+      "ewc_penalty": 0.0,
+      "replay_batch_size": 4
+    },
+    {
+      "mission_index": 5,
+      "scenario_name": "runway_closure",
+      "task_loss": 0.36803251729161207,
+      "ewc_penalty": 0.0,
+      "replay_batch_size": 5
+    },
+    {
+      "mission_index": 6,
+      "scenario_name": "software_exploit_injection",
+      "task_loss": 0.5204448305126094,
+      "ewc_penalty": 0.0,
+      "replay_batch_size": 6
+    },
+    {
+      "mission_index": 7,
+      "scenario_name": "sensor_spoofing",
+      "task_loss": 0.5470374438589978,
+      "ewc_penalty": 0.0,
+      "replay_batch_size": 7
+    },
+    {
+      "mission_index": 8,
+      "scenario_name": "communication_loss",
+      "task_loss": 0.529597359122354,
+      "ewc_penalty": 0.0,
+      "replay_batch_size": 8
+    },
+    {
+      "mission_index": 9,
+      "scenario_name": "fuel_shortage",
+      "task_loss": 0.5562311999745542,
+      "ewc_penalty": 0.0,
+      "replay_batch_size": 8
+    },
+    {
+      "mission_index": 10,
+      "scenario_name": "supply_chain_delay",
+      "task_loss": 0.5936545786782997,
+      "ewc_penalty": 0.0,
+      "replay_batch_size": 8
+    },
+    {
+      "mission_index": 11,
+      "scenario_name": "multiple_simultaneous_failures",
+      "task_loss": 0.4240505546071154,
+      "ewc_penalty": 0.0,
+      "replay_batch_size": 8
+    },
+    {
+      "mission_index": 12,
+      "scenario_name": "mixed_cyber_operational",
+      "task_loss": 0.554627982030742,
+      "ewc_penalty": 0.0,
+      "replay_batch_size": 8
+    },
+    {
+      "mission_index": 13,
+      "scenario_name": "firmware_update_in_flight",
+      "task_loss": 0.5884632206914058,
+      "ewc_penalty": 0.0,
+      "replay_batch_size": 8
+    },
+    {
+      "mission_index": 14,
+      "scenario_name": "delayed_firmware_rollout",
+      "task_loss": 0.4797033319786281,
+      "ewc_penalty": 0.0,
+      "replay_batch_size": 8
+    },
+    {
+      "mission_index": 15,
+      "scenario_name": "compromised_firmware_deployment",
+      "task_loss": 0.6102297391408971,
+      "ewc_penalty": 0.0,
+      "replay_batch_size": 8
+    },
+    {
+      "mission_index": 16,
+      "scenario_name": "staged_patch_rollout",
+      "task_loss": 0.48036994509089553,
+      "ewc_penalty": 0.0,
+      "replay_batch_size": 8
+    },
+    {
+      "mission_index": 17,
+      "scenario_name": "mixed_firmware_and_communication_degradation",
+      "task_loss": 0.4591739740369369,
+      "ewc_penalty": 0.0,
+      "replay_batch_size": 8
+    }
+  ],
+  "retrieval": {
+    "n_episodes": 180,
+    "evaluated": 180,
+    "correct": 139,
+    "precision_at_1": 0.7722222222222223,
+    "majority_class_baseline": 0.5,
+    "outcome_distribution": {
+      "success": 30,
+      "delay": 90,
+      "cyber_incident": 50,
+      "failure": 10
+    }
+  },
+  "scheduler_quality": {
+    "n_records": 200,
+    "initial_weight_cyber": 1.0,
+    "initial_weight_trust": 1.0,
+    "final_weight_cyber": 1.1455311470204521,
+    "final_weight_trust": 0.8544688529795479,
+    "cyber_signal_strength": 0.8
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "condition_full": "full (EpisodicMissionMemory enabled)",
+  "condition_ablated": "no_emm (NullEpisodicMemory -- Algorithm 1 lines 3/15 skipped)",
+  "n_runs_per_condition": 180,
+  "comparisons": [
+    {
+      "metric": "trust_mean",
+      "full_mean": 0.48732716562757133,
+      "no_emm_mean": 0.48732716562757133,
+      "difference": 0.0,
+      "cohens_d_value": 0.0,
+      "n": 180
+    },
+    {
+      "metric": "p_success",
+      "full_mean": 0.47621788887435357,
+      "no_emm_mean": 0.47621788887435357,
+      "difference": 0.0,
+      "cohens_d_value": 0.0,
+      "n": 180
+    },
+    {
+      "metric": "expected_delay",
+      "full_mean": 0.9400154138533737,
+      "no_emm_mean": 0.9400154138533737,
+      "difference": 0.0,
+      "cohens_d_value": 0.0,
+      "n": 180
+    },
+    {
+      "metric": "cyber_impact",
+      "full_mean": 0.4877858431431503,
+      "no_emm_mean": 0.4877858431431503,
+      "difference": 0.0,
+      "cohens_d_value": 0.0,
+      "n": 180
+    },
+    {
+      "metric": "comm_reliability",
+      "full_mean": 0.4467287879445243,
+      "no_emm_mean": 0.4467287879445243,
+      "difference": 0.0,
+      "cohens_d_value": 0.0,
+      "n": 180
+    },
+    {
+      "metric": "operational_confidence",
+      "full_mean": 0.48412376202433066,
+      "no_emm_mean": 0.48412376202433066,
+      "difference": 0.0,
+      "cohens_d_value": 0.0,
+      "n": 180
+    },
+    {
+      "metric": "mdri_value",
+      "full_mean": 0.0,
+      "no_emm_mean": 0.0,
+      "difference": 0.0,
+      "cohens_d_value": 0.0,
+      "n": 180
+    },
+    {
+      "metric": "mdri_dependency_node_count",
+      "full_mean": 0.2777777777777778,
+      "no_emm_mean": 0.2777777777777778,
+      "difference": 0.0,
+      "cohens_d_value": 0.0,
+      "n": 180
+    },
+    {
+      "metric": "memory_episodes_retrieved",
+      "full_mean": 4.638888888888889,
+      "no_emm_mean": 0.0,
+      "difference": 4.638888888888889,
+      "cohens_d_value": 6.514542746328639,
+      "n": 180
+    },
+    {
+      "metric": "warning_count",
+      "full_mean": 0.0,
+      "no_emm_mean": 1.0,
+      "difference": -1.0,
+      "cohens_d_value": 0.0,
+      "n": 180
+    }
+  ]
+}
