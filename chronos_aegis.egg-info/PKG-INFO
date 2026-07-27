@@ -1,0 +1,218 @@
+Metadata-Version: 2.4
+Name: chronos-aegis
+Version: 0.1.0
+Summary: Chronos-AEGIS: a Cognitive Mission Intelligence (CMI) framework for explainable, trust-aware reasoning over cyber-physical systems.
+Author: Adishree Gupta
+License-Expression: MIT
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy>=1.26
+Requires-Dist: pydantic>=2.6
+Requires-Dist: PyYAML>=6.0
+Provides-Extra: dev
+Requires-Dist: pytest>=8.0; extra == "dev"
+Requires-Dist: pytest-cov>=5.0; extra == "dev"
+Requires-Dist: mypy>=1.9; extra == "dev"
+Requires-Dist: ruff>=0.4; extra == "dev"
+Requires-Dist: black>=24.3; extra == "dev"
+Provides-Extra: backend
+Requires-Dist: fastapi>=0.110; extra == "backend"
+Requires-Dist: uvicorn[standard]>=0.29; extra == "backend"
+Dynamic: license-file
+
+# Chronos-AEGIS
+
+Chronos-AEGIS: A Cognitive Mission Intelligence (CMI) Framework for
+Explainable, Trust-Aware Reasoning over Cyber-Physical Systems.
+
+**Source of truth:** [`paper/Chronos-AEGIS_CMI_Manuscript_v4.pdf`](paper/Chronos-AEGIS_CMI_Manuscript_v4.pdf).
+Every module in this repository is checked against that manuscript; see
+[`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) for the full section-by-section
+map of paper component -> code location -> implementation status.
+
+## Implementation status (Phase 8)
+
+This is a large, multi-phase undertaking (a faithful implementation of a
+~20-section research manuscript's full architecture, a Q1-journal-ready
+paper package, and a production deployment). Work proceeds as a narrow,
+*real* vertical slice at a time rather than stubbing everything shallowly:
+
+**Implemented, tested, and faithful to the manuscript:**
+- The Cognitive Mission State sigma(m,t) and Mission Utility U(sigma) (Section 4)
+- The Temporal Reasoning Memory Graph (TRMG) and Temporal Dependency Analysis (Section 6)
+- The Mission-Aware GNN's attention mechanism and prediction heads, Trust
+  Propagation, the Bayesian posterior update, and the Mission Criticality
+  Model (Section 7)
+- The TTRN pipeline / Algorithm 1 orchestration (Section 5), wired via
+  dependency injection against the sections below
+- Episodic Mission Memory (Section 8, `memory/`): all four memory tiers,
+  Algorithm 2 (Memory Update and Consolidation) and Algorithm 3 (Memory
+  Retrieval), including batched consolidation. See `memory/README.md` for
+  the documented simplifications (e.g. indexing structure, agent
+  calibration metric) that keep it honest about where it diverges from the
+  manuscript's reference design.
+- Structured AI Argumentation (Section 9, `agents/argumentation/`): the
+  Argumentation Graph, Dung-style grounded/preferred extension semantics,
+  Conflict(H) and credibility-weighted consensus, and Algorithm 4
+  (Structured Argument Aggregation) -- including its escalation-to-human
+  path for genuinely unresolvable disagreement. See `agents/README.md` for
+  documented simplifications (e.g. preferred-extension tie-break, default
+  credibility).
+- Causal Mission Intelligence (Section 10, `reasoning/causal/`): a
+  Structural Causal Model (domain-supplied, not discovered -- Section
+  10.4 states causal discovery is unsolved), the retained correlational
+  Counterfactual Engine (Section 10.1), Algorithm 5 (Causal Counterfactual
+  Generation) with its explicit causal-vs-correlational labeling, and the
+  eight-level Explainability Pipeline (Section 10.7). See
+  `reasoning/causal/README.md` for documented scope limitations (e.g. only
+  interventional/do queries, not full observational/counterfactual
+  abduction).
+- The AI Patch Scheduler (Section 14, Algorithm 6, `scheduler/`): the
+  feasibility check and weighted-cost argmin over `{patch_now, delay}`.
+  Every input Algorithm 1 itself calls (memory, argumentation, causal,
+  scheduling) is now real.
+- Cognitive Cyber Reasoning, Mission-Aware Cyber Risk Propagation, and the
+  Temporal Attack Graph (Sections 11-13, `cyber/`): the shared
+  similarity-weighted mission-consequence formula (mu(q)), base risk
+  propagation (a widest-path generalization of Trust Propagation),
+  AI-driven attack-chain reasoning, supply-chain/firmware trust decay,
+  zero-trust reasoning, adversarial AI robustness checks, and all three
+  mission-aware cyber metrics -- MTES, MDRI (via a real betweenness-
+  centrality implementation), and CMCS. Algorithm 6's CyberExposure term
+  is now computed from real MTES values (`cyber/scheduler_integration.py`)
+  -- **no placeholder cyber reasoning remains anywhere in the scheduler
+  path.** See `cyber/README.md` for the full component map and every
+  documented assumption the manuscript left underspecified.
+- The Mission Digital Twin (Section 15, `digital_twin/`): a real
+  discrete-event simulation engine -- a monotonic clock, a deterministic
+  event queue, all twelve named event types, Section 15.1's ten canonical
+  scenarios (plus a baseline and two composites), and verified
+  deterministic replay. It is now the *producer* Algorithm 1 consumes
+  (`digital_twin/integration.py`), not a separate mock: `TTRNPipeline`
+  runs against the twin's own real TRMG, unchanged. See
+  `digital_twin/README.md`.
+- The Evaluation Framework's infrastructure (Section 17, `evaluation/`,
+  `scripts/`): batch scenario/seed/parameter sweeps, per-scenario metric
+  aggregation with confidence intervals, standard-library statistics
+  (Cohen's d, Holm-Bonferroni, and scipy-optional paired significance
+  tests), matplotlib-optional visualization, and runnable experiment
+  scripts that have actually been executed against real Digital-Twin-
+  generated data (not fabricated). See `evaluation/README.md` for the
+  real findings.
+- Adaptive Learning and Continual Reasoning (Section 16, `reasoning/continual/`):
+  Algorithm 7 (MissionAdapt) and the Regularized Continual Objective
+  (Section 16.2), with analytic gradients verified against finite
+  differences to machine precision. Section 16.4's meta-learning outer
+  loop is explicitly out of scope per the manuscript's own text ("a
+  design possibility, not a claim"). See `docs/continual-learning-guide.md`
+  for two honest findings this implementation surfaced.
+- A Benchmark Suite (`benchmarks/`), a real ablation
+  (`evaluation/ablation.py`, Section 17.3's No-EMM condition), and a
+  one-command reproducibility workflow (`scripts/reproduce_all.py`) that
+  regenerates every dataset, runs every benchmark, and exports
+  publication-ready tables/figures with a verifiable content hash. See
+  `docs/benchmark-guide.md` and `docs/reproducibility-guide.md`.
+- **A real, manuscript-consistent fix to Episodic Memory retrieval
+  (RQ6/RQ7)**: default retrieval precision@1 was originally *below* its
+  own majority-class baseline (0.3846 vs. 0.6154); diagnosed to a genuine
+  feature-extraction coverage gap and fixed by reading incoming-edge
+  confidence into the similarity function's continuous features -- now
+  0.7778 vs. a 0.5000 baseline on the current, expanded scenario library.
+  See `memory/README.md` and `evaluation/README.md`.
+- **Five new Digital Twin scenarios** (`digital_twin/scenarios.py`'s
+  `FIRMWARE_SCENARIO_BUILDERS`) that exercise MDRI's dependency term for
+  real, closing a gap Phase 7 discovered (every canonical scenario
+  produced `|Dep(m)| = 0`); the original ten canonical scenarios are left
+  completely unmodified for before/after comparison.
+
+**Not started:** any of the named RQ baselines Section 17 needs
+(RQ2/RQ5/RQ8/RQ9/RQ12 -- see `evaluation/README.md`), the production
+backend and frontend, and Render deployment. See each directory's
+`README.md` for what it still needs and why it's blocked on the
+components above.
+
+No RQ result is reported anywhere in this repository. The manuscript
+itself states its evaluation protocol "has not yet been executed" -- this
+repository does not get ahead of that. Several small, partial, real
+experiments have been run (see `evaluation/README.md`, "What has actually
+been run") -- none is a claimed RQ result, and all report findings
+exactly as computed, including unfavorable ones where that is what was
+measured (the original memory-retrieval regression above; the No-EMM
+ablation showing zero effect on any GNN prediction-head metric; the EWC
+penalty term's gradient being structurally zero under a literal single-
+step-per-mission reading of Algorithm 7).
+
+**A real cross-process determinism bug was found and fixed this phase**:
+`digital_twin/twin.py`'s per-node feature seed used Python's built-in
+`hash()`, which is salted per-process by `PYTHONHASHSEED` by default --
+looking perfectly deterministic within any single process (including an
+entire pytest run) while silently producing different results across
+separate `python` invocations with the same seed. Found while verifying
+`scripts/reproduce_all.py`'s reproducibility claim; fixed via
+`hashlib.sha256`. See `docs/reproducibility-guide.md`.
+
+## Repository layout
+
+```
+paper/          manuscript (source of truth); Q1 paper package -- not yet built
+docs/           architecture map, developer/continual-learning/benchmark/reproducibility guides
+reasoning/      CMI state, mission utility, TTRN pipeline, trust layer, causal, continual (Section 16) -- all implemented
+graph/          TRMG core data model + Temporal Dependency Analysis + snapshot/pruning (Phase 8)
+memory/         Episodic Mission Memory -- implemented (Section 8), + Phase 8 Episodic Learning
+agents/         multi-agent hypothesis roster + Structured AI Argumentation -- implemented (Section 9)
+cyber/          cognitive cyber reasoning, risk propagation, attack graph, cyber metrics -- implemented (Sections 11-13)
+scheduler/      AI Patch Scheduler -- implemented (Section 14), + Phase 8 weight calibration
+digital_twin/   Mission Digital Twin -- implemented (Section 15): discrete-event engine, 18-scenario library, replay, dataset export
+evaluation/     evaluation infrastructure (Section 17): batch sweeps, aggregation, statistics, ablation; no RQ baseline yet
+benchmarks/     self-benchmarking suite (Phase 8): scalability, convergence, retrieval, scheduler quality -- not RQ baselines
+datasets/       simulation/evaluation data -- generated/ populated by scripts/, gitignored
+backend/        FastAPI production API -- not started
+frontend/       React/Next.js dashboard -- not started
+deployment/     Render config -- not started
+docker/         containerization -- not started
+scripts/        experiment scripts + the one-command reproducibility workflow (Phase 8)
+configs/        default.yaml -- CMI reasoning parameters
+examples/       real, runnable end-to-end demos (incremental + capstone)
+tests/          unit/integration tests for everything implemented
+```
+
+## Getting started
+
+```bash
+pip install -e ".[dev]"
+pytest                                                    # 548 tests, all passing (+ 5 honest skips: matplotlib not installed)
+python -m examples.run_ttrn_pipeline                      # Algorithm 1, no optional backends
+python -m examples.run_ttrn_pipeline_with_memory           # + real EMM across 3 missions
+python -m examples.run_ttrn_pipeline_with_argumentation    # + real Structured AI Argumentation
+python -m examples.run_ttrn_pipeline_with_causal           # + real causal engine + 8-level explanation
+python -m examples.run_ttrn_pipeline_with_scheduler        # + real cyber reasoning + AI Patch Scheduler (full capstone)
+python -m scripts.reproduce_all                           # one command: datasets + benchmarks + ablation + tables/figures
+python -m scripts.experiment_rq12_cyber_metrics            # Digital Twin + MDRI, canonical vs. firmware scenarios
+python -m scripts.experiment_rq6_rq7_memory_retrieval      # Digital Twin + Episodic Memory retrieval precision, before/after
+ruff check .                                              # lint
+mypy graph reasoning memory agents scheduler cyber digital_twin evaluation benchmarks scripts --ignore-missing-imports  # type-check
+```
+
+Optional dependencies -- neither is required, and their absence never
+silently degrades a result into a fabricated one (see
+`evaluation/README.md` and `digital_twin/visualization.py`):
+
+```bash
+pip install scipy         # enables real paired-t-test/Wilcoxon p-values in evaluation.statistics.paired_comparison
+pip install matplotlib    # enables digital_twin.visualization's plotting functions
+```
+
+## License
+
+MIT -- see `LICENSE`. See `CITATION.cff` for how to cite this repository.
+
+## Open decisions
+
+- **Render deployment**: no deployment exists yet. A real URL will be added
+  to `deployment/README.md` only after an actual deployment is created --
+  never fabricated ahead of time.
+- **v1.0.0 tag**: this repository is feature-complete through Sections
+  1-16 and has passed a research-artifact audit (Phase 9; see
+  `paper/artifact/`), but has not yet been tagged for a public release --
+  see `CHANGELOG.md` and `RELEASE_NOTES.md`.

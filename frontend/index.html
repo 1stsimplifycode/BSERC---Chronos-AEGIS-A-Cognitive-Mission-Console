@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chronos-AEGIS — Mission Console</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="brand-mark">&#9679;</span>
+      <div>
+        <h1>Chronos-AEGIS</h1>
+        <p class="tagline">Cognitive Mission Intelligence — live reasoning console</p>
+      </div>
+    </div>
+    <div class="status" id="health-status">
+      <span class="dot" id="health-dot"></span>
+      <span id="health-text">checking backend&hellip;</span>
+    </div>
+  </header>
+
+  <main>
+    <section class="panel scenarios-panel">
+      <div class="panel-head">
+        <h2>Digital Twin Scenarios</h2>
+        <p class="hint">Section 15.1 — click a scenario to run it live through Algorithm 1</p>
+      </div>
+      <div id="scenario-grid" class="scenario-grid">
+        <p class="loading">Loading scenarios&hellip;</p>
+      </div>
+    </section>
+
+    <section class="panel run-panel">
+      <div class="panel-head">
+        <h2>Run</h2>
+        <p class="hint" id="run-hint">Select a scenario to configure a run.</p>
+      </div>
+
+      <div id="run-controls" class="run-controls hidden">
+        <div class="selected-scenario">
+          <span class="label">Scenario</span>
+          <span id="selected-name" class="value mono"></span>
+        </div>
+        <label class="seed-field">
+          <span class="label">Seed</span>
+          <input type="number" id="seed-input" value="0" min="0" step="1" />
+        </label>
+        <button id="run-button">Run scenario</button>
+      </div>
+
+      <div id="run-error" class="error hidden"></div>
+
+      <div id="run-output" class="run-output hidden">
+        <div class="outcome-row">
+          <div class="outcome-card">
+            <span class="label">Ground truth outcome</span>
+            <span id="outcome-value" class="value mono"></span>
+          </div>
+          <div class="outcome-card">
+            <span class="label">Mission completed</span>
+            <span id="completed-value" class="value mono"></span>
+          </div>
+          <div class="outcome-card">
+            <span class="label">Query points</span>
+            <span id="points-value" class="value mono"></span>
+          </div>
+        </div>
+
+        <canvas id="trust-chart" width="900" height="220"></canvas>
+        <p class="chart-legend">
+          <span class="legend-swatch trust"></span> trust_mean
+          <span class="legend-swatch success"></span> p_success
+        </p>
+
+        <div class="table-wrap">
+          <table id="trajectory-table">
+            <thead>
+              <tr>
+                <th>t</th>
+                <th>phase</th>
+                <th>trust_mean</th>
+                <th>p_success</th>
+                <th>expected_delay</th>
+                <th>cyber_impact</th>
+                <th>mdri</th>
+                <th>outcome</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      Every value on this page is computed live by the same
+      <code>TTRNPipeline</code> / <code>MissionDigitalTwin</code> code the test
+      suite exercises — nothing here is mocked or pre-recorded.
+      <a href="/docs" target="_blank" rel="noopener">API docs</a>
+    </p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

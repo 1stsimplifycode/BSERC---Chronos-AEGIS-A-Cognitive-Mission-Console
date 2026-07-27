@@ -1,0 +1,29 @@
+# Render Blueprint for Chronos-AEGIS's minimal live-demo backend
+# (backend/app.py). See deployment/README.md and backend/README.md for
+# what this service does and does not do -- no auth, no persistence, no
+# database: every response is computed live, in-process, from the same
+# reasoning-pipeline code the test suite exercises.
+#
+# Deploy: https://dashboard.render.com/blueprints -> "New Blueprint
+# Instance" -> point at this repository. Render reads this file
+# automatically from the repo root's `deployment/` directory when a
+# Blueprint is created against a path other than the repo root -- if
+# your Render setup expects `render.yaml` at the repository root
+# instead, copy (not move) this file there; both locations are
+# documented here so neither is a surprise.
+services:
+  - type: web
+    name: chronos-aegis-api
+    runtime: python
+    plan: free
+    region: oregon
+    branch: main
+    buildCommand: "pip install -e '.[backend]'"
+    startCommand: "uvicorn backend.app:app --host 0.0.0.0 --port $PORT"
+    healthCheckPath: /health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
+      - key: CHRONOS_CORS_ORIGINS
+        value: "*"
+    autoDeploy: true
