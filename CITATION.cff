@@ -1,0 +1,34 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata below."
+title: "Chronos-AEGIS: A Cognitive Mission Intelligence (CMI) Framework for Explainable, Trust-Aware Reasoning over Cyber-Physical Systems"
+type: software
+authors:
+  - family-names: Gupta
+    given-names: Adishree
+version: 0.1.0
+date-released: "2026-07-28"
+license: MIT
+repository-code: "https://github.com/1stsimplifycode/chronos-aegis"
+abstract: >
+  Chronos-AEGIS implements the Cognitive Mission Intelligence (CMI)
+  framework formalized in the accompanying manuscript
+  (paper/Chronos-AEGIS_CMI_Manuscript_v4.pdf): a Temporal Reasoning
+  Memory Graph, Episodic Mission Memory, Structured AI Argumentation,
+  Causal Mission Intelligence, Cognitive Cyber Reasoning, Mission-Aware
+  Cyber Risk Propagation, Temporal Attack Graphs, an AI Patch Scheduler,
+  a Mission Digital Twin, and Adaptive Learning / Continual Reasoning,
+  together with an evaluation framework, benchmark suite, and
+  reproducibility workflow. See paper/artifact/ for the artifact
+  description and docs/traceability-matrix.md for a per-claim mapping
+  from the manuscript to this implementation.
+preferred-citation:
+  type: unpublished
+  title: "Chronos-AEGIS: A Cognitive Mission Intelligence (CMI) Framework for Explainable, Trust-Aware Reasoning over Cyber-Physical Systems"
+  authors:
+    - family-names: Gupta
+      given-names: Adishree
+  year: 2026
+  notes: >
+    Manuscript in preparation (paper/Chronos-AEGIS_CMI_Manuscript_v4.pdf).
+    Update this entry with the final venue, DOI, and publication year
+    once accepted -- not fabricated here ahead of that.

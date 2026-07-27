@@ -1,0 +1,29 @@
+# Default configuration for the CMI reasoning engine (Sections 4-7 of the manuscript).
+# Values marked "requires calibration" are design parameters the manuscript
+# explicitly identifies as open empirical questions (Section 18), not fitted constants.
+
+ttrn:
+  k_hop_bound: 6          # k in Algorithm 1, line 2; Section 5.1 fixes k <= 6.
+  num_agents: 9           # |A|, Section 5.3 complexity analysis.
+
+trmg:
+  # Default decay rate lambda_u used when a node/edge does not specify its own.
+  # Section 6.1: c decays as exp(-lambda_u * (t - t_u)).
+  default_decay_rate: 0.05
+  default_edge_priority: 1.0
+
+mission_criticality:
+  # tau(m) = alpha_base + (1 - alpha_base) * kappa_m   (Section 7.4)
+  alpha_base: 0.5          # requires calibration (Section 7.4, Section 18)
+
+mission_utility:
+  # U(sigma) = alpha*T_post + beta*P_success - gamma*C - delta_w*D - eta*Upsilon (Section 4.2)
+  alpha: 1.0
+  beta: 1.0
+  gamma: 1.0
+  delta_w: 1.0
+  eta: 1.0
+
+bayesian_trust:
+  # Prior uncertainty for a node with no prior history.
+  default_prior_variance: 1.0

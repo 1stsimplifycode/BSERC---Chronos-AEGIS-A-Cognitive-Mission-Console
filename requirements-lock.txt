@@ -1,0 +1,52 @@
+# Dependency lock file (Phase 9 artifact-evaluation requirement).
+#
+# Exact versions this repository's test suite, quality gates, and
+# reproducibility workflow were last verified against. Generated via
+# `pip freeze` from the environment described in
+# `docs/reproducibility-audit.md` (Python 3.11.9, Windows-10-10.0.26200,
+# Intel64), filtered to this project's actual dependencies (excludes
+# incidental packages installed for one-off manuscript-reading tooling
+# during development, which are not project dependencies -- see
+# pyproject.toml for the authoritative, version-range dependency
+# declaration this lock file pins).
+#
+# Install with:
+#   pip install -r requirements-lock.txt
+#   pip install -e . --no-deps
+#
+# For normal development, prefer `pip install -e ".[dev]"` (uses
+# pyproject.toml's version ranges); use this file only when exact
+# reproduction of the audited environment matters.
+
+# --- Runtime dependencies (pyproject.toml [project.dependencies]) ---
+numpy==2.4.6
+pydantic==2.13.4
+pydantic_core==2.46.4
+annotated-types==0.8.0
+typing-inspection==0.4.2
+typing_extensions==4.16.0
+PyYAML==6.0.3
+
+# --- Dev dependencies (pyproject.toml [project.optional-dependencies].dev) ---
+pytest==9.1.1
+iniconfig==2.3.0
+packaging==26.2
+pluggy==1.6.0
+Pygments==2.20.0
+colorama==0.4.6
+pytest-cov==7.1.0
+coverage==7.15.2
+mypy==2.3.0
+mypy_extensions==1.1.0
+pathspec==1.1.1
+ruff==0.16.0
+black==26.5.1
+click==8.4.2
+platformdirs==4.11.0
+pytokens==0.4.1
+
+# --- Optional dependencies (NOT installed in the Phase 9 audit
+# environment; install either or both to exercise the code paths gated
+# on them -- see docs/negative-results.md Section 5) ---
+# scipy>=1.11        # evaluation.statistics.paired_comparison's real p-values
+# matplotlib>=3.8    # digital_twin.visualization's figures
